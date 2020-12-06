@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block content %}
+    '<h1>Hello Pongi and Soya!</h1>'
+
+    {% for post in posts %}
+        <h1>{{ post.title }}</h1>
+        <h2>{{ post.author }}</h2>
+    {% endfor %}
+{% endblock content %}
